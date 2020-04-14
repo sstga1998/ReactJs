@@ -1,0 +1,10 @@
+.MovieThumb{
+    width: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.MovieThumb img {
+    width: 170px;
+    position: sticky;
+    top: 50px;
+}

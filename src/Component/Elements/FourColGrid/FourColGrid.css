@@ -1,0 +1,94 @@
+.Tabs{
+    -webkit-tap-highlight-color: transparent;
+}
+.TabList{
+    margin: 0 0 10px;
+    padding: 0;
+    text-align: center;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.Tab {
+    display: inline-block;
+    border: 1px solid #aaa;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 15px 48px;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+.react-tabs__tab--selected {
+    background: rgb(189, 189, 100);
+    border-color: #aaa;
+    color: black;
+    border-radius: 5px 5px 0 0;
+}
+  
+
+.fourColGrid{
+    width: 78%;
+}
+
+.View{
+    height: 100px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.View img {
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.rmdb-grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin: 40px 0 20px 0;
+  }
+  
+@keyframes animateGrid {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  
+@media screen and (max-width: 720px) {
+    .rmdb-grid-content {
+      grid-template-columns: auto auto;
+    }
+  
+    .rmdb-grid-element:nth-child(2n+2) {
+      margin-right: 0;
+    }
+}
+
+.rmdb-grid-content img {
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    opacity: 0.8;
+}
